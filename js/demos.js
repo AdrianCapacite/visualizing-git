@@ -361,7 +361,7 @@ define([], function () {
     key: 'practice-with-remote',
   message: 'Practice git commands with a remote repository</br>' +
     '- \`git clone\` to clone a remote repository (don\'t do this step as</br>' +
-    '  this example is already cloned)</br>' +
+    '&nbsp;&nbsp;this example is already cloned)</br>' +
     '- \`git pull\` to pull changes from the remote repository</br>' +
     '- \`git commit\` to commit changes</br>' +
     '- \`git push\` to push changes to the remote repository</br>' +
@@ -369,7 +369,7 @@ define([], function () {
     'Instructions: </br>' +
     '1. The remote is ahead by one commit, pull the changes</br>' +
     '2. Commit 4 changes with each commit having a different message with</br>' +
-    '   the words: \'Git\', \'Good\', \'With\', \'Adrian\'  </br>' +
+    '&nbsp;&nbsp;&nbsp;the words: \'Git\', \'Good\', \'With\', \'Adrian\'  </br>' +
     '3. Push the changes to the remote repository</br>',
     commitData: [
         {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'},
