@@ -356,7 +356,30 @@ define([], function () {
     ]
   }
 
+  var basicPractice = {
+    title: 'Practice with remote',
+    key: 'practice-with-remote',
+    message: 'Practice git commands with a remote repository\n\
+    - \`git clone\` to clone a remote repository (don\'t do this step as\n\
+      this example is already cloned)\n\
+    - \`git pull\` to pull changes from the remote repository\n\
+    - \'git commit\' to commit changes\n\
+    - \`git push\` to push changes to the remote repository\n\
+    \n\
+    Instructions: \n\
+    1. The remote is ahead by one commit, pull the changes\n\
+    2. Commit 4 changes with each commit having a different message with\n\
+       the words: \'Git\', \'Good\', \'With\', \'Adrian\'  \n\
+    3. Push the changes to the remote repository\n',
+    commitData: [
+        {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'},
+    ],
+    originData: [
+        {id: 'e137e9b', tags: ['master'], message: 'first commit'}
+    ]
+  }
+
   return [
-    free, freeWithRemote, upstreamChanges, rewrittenHistory, revert, cherryPick
+    basicPractice
   ]
 })
