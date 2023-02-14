@@ -359,7 +359,7 @@ define([], function () {
   var practicWithRemote = {
     title: 'Practice with remote',
     key: 'practice-with-remote',
-  message: 'Practice git commands with a remote repository</br>' +
+    message: 'Practice git commands with a remote repository</br>' +
     '- \`git clone\` to clone a remote repository (don\'t do this step as</br>' +
     '&nbsp;&nbsp;this example is already cloned)</br>' +
     '- \`git pull\` to pull changes from the remote repository</br>' +
@@ -396,10 +396,76 @@ define([], function () {
         "cy": 360,
         "branchless": false
     }
-]
+    ]
   }
 
+  var practiceBranching = {
+    title: 'Practice Branching',
+    key: 'practice-branching',
+    message: 'Practice git branching commands with a remote repository</br>' +
+    '- \`git clone\` to clone a remote repository (don\'t do this step as</br>' +
+    '&nbsp;&nbsp;this example is already cloned)</br>' +
+    '- \`git branch\` to create a new branch</br>' +
+    '- \`git checkout\` to switch to a different branch</br>' +
+    '- \`git merge\` to merge a branch into the current branch</br>' +
+    '- \`git rebase\` to rebase the current branch onto another branch</br>' +
+    '</br>' +
+    'Instructions: </br>' +
+    '1. Branch named \'feature1\' of the master branch and switch to it</br>' +
+    '2. Make 3 commits with your own messages</br>' +
+    '3. Switch back to the master branch</br>' +
+    '4. Pull the changes from the remote repository</br>' +
+    '5. Merge the feature1 branch into the master branch</br>' +
+    '6. Push the changes to the remote repository</br>' +
+    '7. Delete the feature1 branch</br>',
+    commitData: [
+        {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'},
+    ],
+    originData: [
+    {
+        "id": "e137e9b",
+        "tags": [],
+        "message": "first commit",
+        "parent": "initial",
+        "cx": 50,
+        "cy": 360,
+        "branchless": false
+    },
+    {
+        "id": "7369cc0",
+        "tags": [],
+        "message": "Hello World",
+        "parent": "e137e9b",
+        "cx": 140,
+        "cy": 360,
+        "branchless": false
+    },
+    {
+        "id": "ea1c111",
+        "tags": [],
+        "message": "Git",
+        "parent": "7369cc0",
+        "cx": 230,
+        "cy": 360,
+        "branchless": false
+    },
+    {
+        "id": "6cfb392",
+        "tags": [
+            "master",
+            "HEAD"
+        ],
+        "message": "Good",
+        "parent": "ea1c111",
+        "cx": 320,
+        "cy": 360,
+        "branchless": false
+    }
+    ],
+  }
+  
+
   return [
-    practicWithRemote,
+    practicWithRemote, practiceBranching
   ]
 })
