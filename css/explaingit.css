@@ -337,6 +337,16 @@ header * {
   display: inline-block;
 }
 
+header h1 a {
+  color: #000
+}
+header h1 a:hover {
+  color: blue;
+}
+header h1 a:visited {
+  color: purple;
+}
+
 #ExplainGitZen-Container {
   margin: 0;
   padding: 0;
