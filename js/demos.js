@@ -419,7 +419,7 @@ define([], function () {
     '6. Push the changes to the remote repository</br>' +
     '7. Delete the feature1 branch</br>',
     commitData: [
-        {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'},
+        {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'}
     ],
     originData: [
     {
@@ -463,7 +463,100 @@ define([], function () {
     }
     ],
   }
-  
+
+  var freePratice = {
+    title: 'Free Practice',
+    key: 'free-practice',
+    message: 'Practice git commands with a remote repository</br>' +
+    '- \`git clone\` to clone a remote repository (don\'t do this step as</br>' +
+    '&nbsp;&nbsp;this example is already cloned)</br>' +
+    '- \`git pull\` to pull changes from the remote repository</br>' +
+    '- \`git commit\` to commit changes</br>' +
+    '- \`git push\` to push changes to the remote repository</br>' +
+    '- \`git branch\` to create a new branch</br>' +
+    '- \`git checkout\` to switch to a different branch</br>' +
+    '- \`git merge\` to merge a branch into the current branch</br>' +
+    '- \`git rebase\` to rebase the current branch onto another branch</br>',
+    commitData: [
+        {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'}
+    ],
+    originData: [
+    {
+        "id": "e137e9b",
+        "tags": [],
+        "message": "first commit",
+        "parent": "initial",
+        "cx": 50,
+        "cy": 371,
+        "branchless": false
+    },
+    {
+        "id": "e97060d",
+        "tags": [],
+        "parent": "e137e9b",
+        "cx": 140,
+        "cy": 371,
+        "branchless": false
+    },
+    {
+        "id": "8f29261",
+        "tags": [],
+        "parent": "e97060d",
+        "cx": 230,
+        "cy": 371,
+        "branchless": false
+    },
+    {
+        "id": "0eded6d",
+        "tags": [
+            "feature1"
+        ],
+        "parent": "8f29261",
+        "cx": 320,
+        "cy": 371,
+        "branchless": false
+    },
+    {
+        "id": "7369cc0",
+        "parent": "e137e9b",
+        "tags": [],
+        "cx": 140,
+        "cy": 281,
+        "branchless": false
+    },
+    {
+        "id": "ea1c111",
+        "parent": "7369cc0",
+        "tags": [],
+        "cx": 230,
+        "cy": 281,
+        "branchless": false
+    },
+    {
+        "id": "6cfb392",
+        "parent": "ea1c111",
+        "tags": [],
+        "cx": 320,
+        "cy": 281,
+        "branchless": false
+    },
+    {
+        "parent2": "0eded6d",
+        "id": "7654bbe",
+        "tags": [
+            "master",
+            "HEAD",
+            "origin/master"
+        ],
+        "message": "Merge",
+        "parent": "6cfb392",
+        "cx": 410,
+        "cy": 281,
+        "branchless": false
+    }
+    ]
+  }
+
 
   return [
     practicWithRemote, practiceBranching
