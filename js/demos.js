@@ -559,6 +559,6 @@ define([], function () {
 
 
   return [
-    practicWithRemote, practiceBranching
+    practicWithRemote, practiceBranching, freePratice
   ]
 })
