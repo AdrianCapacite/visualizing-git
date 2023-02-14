@@ -356,7 +356,7 @@ define([], function () {
     ]
   }
 
-  var basicPractice = {
+  var practicWithRemote = {
     title: 'Practice with remote',
     key: 'practice-with-remote',
   message: 'Practice git commands with a remote repository</br>' +
@@ -400,6 +400,6 @@ define([], function () {
   }
 
   return [
-    basicPractice
+    practicWithRemote,
   ]
 })
